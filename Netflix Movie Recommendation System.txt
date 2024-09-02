@@ -1,0 +1,27 @@
+Netflix Movie Recommendation System Using SVD
+Overview:
+This project involves building a movie recommendation system for Netflix using Singular Value Decomposition (SVD), a popular matrix factorization technique. The goal is to predict user ratings for movies they haven't watched yet, based on the patterns learned from the existing user-movie rating matrix.
+
+Problem Statement
+Netflix aims to provide personalized movie recommendations to its users by leveraging data on their past viewing behavior. The challenge is to predict how a user might rate a movie they haven't seen yet, allowing Netflix to recommend movies that users are likely to enjoy. This project uses SVD to decompose the user-movie rating matrix and predict missing ratings, thus creating a robust recommendation system.
+
+Usage
+
+Data Loading and Preprocessing:
+
+Use the data_preprocessing.py script to load the user-movie rating dataset and preprocess it. This step includes handling missing values, normalizing ratings, and splitting the data into training and test sets.
+Applying SVD and Building the Model:
+
+It applies Singular Value Decomposition (SVD) to factorize the user-movie rating matrix into three matrices. These matrices represent the latent factors of users and movies, which are then used to predict missing ratings.
+
+Model Evaluation:This script calculates Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) on the test set to assess the accuracy of the predicted ratings.
+
+Generating Recommendations:It allows you to generate personalized movie recommendations for users. By using the decomposed matrices, the script predicts ratings for all unseen movies for a given user and suggests the top-rated ones.
+
+Conclusion
+This project demonstrates how Singular Value Decomposition (SVD) can be used to build an effective movie recommendation system for Netflix. By factorizing the user-movie rating matrix, the model can predict how users might rate unseen movies and generate personalized recommendations.
+
+Future Work
+Experiment with more advanced models like SVD++ or Matrix Factorization with Alternating Least Squares (ALS).
+Integrate additional features such as movie genres, user demographics, and timestamps to improve recommendations.
+Deploy the recommendation system as a web application.
